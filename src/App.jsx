@@ -8,7 +8,7 @@ const brand = {
 	fontFamily: `'Inter', sans-serif`,
 	colors: {
 		green: 'hsl(75, 94%, 57%)',
-		greendark: 'red',
+		greendark: 'hsl(75, 94%, 42%)',
 		white: 'hsl(0, 0%, 100%)',
 		grey: 'hsl(0, 0%, 20%)',
 		darkgrey: 'hsl(0, 0%, 12%)',
@@ -21,12 +21,15 @@ const theme = extendTheme({
 	styles: {
 		global: {
 			body: {
-				fontFamily: brand.fontFamily,
 				bg: brand.colors.offblack,
 				color: brand.colors.white,
 				lineHeight: brand.lineHeight,
 			},
 		},
+	},
+	fonts: {
+		body: brand.fontFamily,
+		heading: brand.fontFamily
 	},
 	colors: {
 		brand: brand.colors,
